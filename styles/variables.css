@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: 'Inter';
+  --accent-font-family: 'PressStart2';
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --logo-card-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --card-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+  --card-title-gap: 3px 10px;
+  --logo-block-start: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  --floopy-size: 21px;
+  --floopy-dialog-size: 39px;
+  --dialog__button: 12.5px;
+  --difference-color: #fff;
+  --accent-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: red;
+  --animation-hover-color: #000;
+}
+
+@media (width <= 375px) {
+  :root {
+  --logo-card-size: 100%;
+  --card-size: 100%;
+  --card-title-gap: 4px 10px 6px;
+  --logo-block-start: 120px;
+  --floopy-size: 28px;
+  }
+}
