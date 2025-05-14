@@ -92,7 +92,7 @@
 
 .card__buttons {
   display: flex;
-  gap: 12px;
+  gap: 5px;
   align-items: center;
   justify-content: flex-end;
   margin: 0 25px 25px 0;
@@ -174,7 +174,7 @@
 .card__picture-container {
   position: relative;
   aspect-ratio: 1 / 1;
-  block-size: calc(var(--card-size) - 4px);
+  block-size: var(--card-size);
   inline-size: calc(var(--card-size) - 4px);
 }
 
@@ -361,7 +361,11 @@
 @media (width <= 375px) {
   .save-button {
     flex-direction: column;
-}
+  }
+
+  .card__picture-container {
+    inline-size: 100%;
+  }
 }
 
 
