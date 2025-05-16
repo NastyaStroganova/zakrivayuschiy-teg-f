@@ -220,21 +220,23 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  inset: 0;
 }
 
 .close-button {
   border: none;
   -webkit-appearance: none;
   appearance: none;  
+  inline-size: 100%;
 }
 
 .dialog__button {
-  padding: 9.5px 0 14.5px;
+  padding: 9.5px 0 14.5px;/*9.5px 130px 14.5px;*/
   text-align: center;
   text-transform: uppercase;
-  inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
   border: 2px solid #000;
-  block-size: 38px;
+  /*block-size: 38px;*/
+  inline-size: 100%;
 }
 
 .dialog__title {
@@ -357,8 +359,11 @@
 
   .dialog[open] {
     padding: 30px 40px;
-    /*inline-size: 341px;*/
   }
+
+  /*.dialog__button {
+    /*padding: 9.5px 112px 14.5px;*/
+  }*/
 }
 
 
