@@ -17,15 +17,17 @@
   --contour-color: #000;
   --animation-fill-color: red;
   --animation-hover-color: #000;
+  --dialog-padding: 30px;
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
   :root {
-  --logo-card-size: 100%; 
-  --lable-logo-inline-size: 13px;
-  --card-size: 100%;
-  --card-title-gap: 4px 10px 6px;
-  --logo-block-start: 120px;
-  --floopy-size: 28px;
+    --logo-card-size: 100%;
+    --lable-logo-inline-size: 13px;
+    --card-size: 100%;
+    --card-title-gap: 4px 10px 6px;
+    --logo-block-start: 120px;
+    --floopy-size: 28px;
+    --dialog-padding: 30px 40px;
   }
 }
